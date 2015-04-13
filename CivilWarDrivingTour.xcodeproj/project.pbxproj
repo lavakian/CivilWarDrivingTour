@@ -14,6 +14,7 @@
 		95F7931E1ACC7B2B006D1E74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F7931D1ACC7B2B006D1E74 /* Images.xcassets */; };
 		95F793211ACC7B2B006D1E74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F7931F1ACC7B2B006D1E74 /* LaunchScreen.xib */; };
 		95F7932D1ACC7B2B006D1E74 /* CivilWarDrivingTourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F7932C1ACC7B2B006D1E74 /* CivilWarDrivingTourTests.swift */; };
+		95F793371AD30ECA006D1E74 /* Sites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95F793361AD30ECA006D1E74 /* Sites.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		95F793261ACC7B2B006D1E74 /* CivilWarDrivingTourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CivilWarDrivingTourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F7932B1ACC7B2B006D1E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F7932C1ACC7B2B006D1E74 /* CivilWarDrivingTourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilWarDrivingTourTests.swift; sourceTree = "<group>"; };
+		95F793361AD30ECA006D1E74 /* Sites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sites.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				95F7931D1ACC7B2B006D1E74 /* Images.xcassets */,
 				95F7931F1ACC7B2B006D1E74 /* LaunchScreen.xib */,
 				95F793121ACC7B2B006D1E74 /* Supporting Files */,
+				95F793361AD30ECA006D1E74 /* Sites.plist */,
 			);
 			path = CivilWarDrivingTour;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F7931C1ACC7B2B006D1E74 /* Main.storyboard in Resources */,
+				95F793371AD30ECA006D1E74 /* Sites.plist in Resources */,
 				95F793211ACC7B2B006D1E74 /* LaunchScreen.xib in Resources */,
 				95F7931E1ACC7B2B006D1E74 /* Images.xcassets in Resources */,
 			);
