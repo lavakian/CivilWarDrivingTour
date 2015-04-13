@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Site 1</key>
-	<array>
-		<string>Address for example</string>
-	</array>
+	<array/>
 	<key>New item - 3</key>
 	<array/>
 	<key>New item - 4</key>
