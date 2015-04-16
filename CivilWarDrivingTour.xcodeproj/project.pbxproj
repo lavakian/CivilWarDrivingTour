@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		952E7BB61ADC50F200CD41BE /* SiteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E7BB51ADC50F200CD41BE /* SiteInfoViewController.swift */; };
+		952E7BB81ADC523700CD41BE /* SiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E7BB71ADC523700CD41BE /* SiteTableViewCell.swift */; };
+		952E7BBA1ADC53D700CD41BE /* SiteMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E7BB91ADC53D700CD41BE /* SiteMapViewController.swift */; };
+		952E7BBC1AE07DB200CD41BE /* SitesWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E7BBB1AE07DB200CD41BE /* SitesWebViewController.swift */; };
 		95F793151ACC7B2B006D1E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F793141ACC7B2B006D1E74 /* AppDelegate.swift */; };
-		95F793171ACC7B2B006D1E74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F793161ACC7B2B006D1E74 /* FirstViewController.swift */; };
-		95F793191ACC7B2B006D1E74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F793181ACC7B2B006D1E74 /* SecondViewController.swift */; };
+		95F793171ACC7B2B006D1E74 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F793161ACC7B2B006D1E74 /* HomeViewController.swift */; };
+		95F793191ACC7B2B006D1E74 /* SitesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F793181ACC7B2B006D1E74 /* SitesTableViewController.swift */; };
 		95F7931C1ACC7B2B006D1E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F7931A1ACC7B2B006D1E74 /* Main.storyboard */; };
 		95F7931E1ACC7B2B006D1E74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F7931D1ACC7B2B006D1E74 /* Images.xcassets */; };
 		95F793211ACC7B2B006D1E74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F7931F1ACC7B2B006D1E74 /* LaunchScreen.xib */; };
@@ -28,18 +32,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		952E7BB51ADC50F200CD41BE /* SiteInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteInfoViewController.swift; sourceTree = "<group>"; };
+		952E7BB71ADC523700CD41BE /* SiteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteTableViewCell.swift; sourceTree = "<group>"; };
+		952E7BB91ADC53D700CD41BE /* SiteMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteMapViewController.swift; sourceTree = "<group>"; };
+		952E7BBB1AE07DB200CD41BE /* SitesWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesWebViewController.swift; sourceTree = "<group>"; };
 		95F7930F1ACC7B2B006D1E74 /* CivilWarDrivingTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CivilWarDrivingTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F793131ACC7B2B006D1E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F793141ACC7B2B006D1E74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95F793161ACC7B2B006D1E74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		95F793181ACC7B2B006D1E74 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		95F793161ACC7B2B006D1E74 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		95F793181ACC7B2B006D1E74 /* SitesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesTableViewController.swift; sourceTree = "<group>"; };
 		95F7931B1ACC7B2B006D1E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95F7931D1ACC7B2B006D1E74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		95F793201ACC7B2B006D1E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		95F793261ACC7B2B006D1E74 /* CivilWarDrivingTourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CivilWarDrivingTourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F7932B1ACC7B2B006D1E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F7932C1ACC7B2B006D1E74 /* CivilWarDrivingTourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilWarDrivingTourTests.swift; sourceTree = "<group>"; };
-		95F793361AD30ECA006D1E74 /* Sites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sites.plist; sourceTree = "<group>"; };
+		95F793361AD30ECA006D1E74 /* Sites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Sites.plist; path = CivilWarDrivingTour/Sites.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		952E7BB11ADC507200CD41BE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				95F793361AD30ECA006D1E74 /* Sites.plist */,
+			);
+			name = Data;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		952E7BB21ADC507E00CD41BE /* Tour Sites */ = {
+			isa = PBXGroup;
+			children = (
+				95F793181ACC7B2B006D1E74 /* SitesTableViewController.swift */,
+				952E7BB51ADC50F200CD41BE /* SiteInfoViewController.swift */,
+				952E7BB71ADC523700CD41BE /* SiteTableViewCell.swift */,
+				952E7BBB1AE07DB200CD41BE /* SitesWebViewController.swift */,
+			);
+			name = "Tour Sites";
+			sourceTree = "<group>";
+		};
+		952E7BB31ADC508B00CD41BE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				952E7BB91ADC53D700CD41BE /* SiteMapViewController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		952E7BB41ADC509600CD41BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				95F793161ACC7B2B006D1E74 /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		95F793061ACC7B2B006D1E74 = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +125,15 @@
 		95F793111ACC7B2B006D1E74 /* CivilWarDrivingTour */ = {
 			isa = PBXGroup;
 			children = (
+				952E7BB11ADC507200CD41BE /* Data */,
 				95F793141ACC7B2B006D1E74 /* AppDelegate.swift */,
-				95F793161ACC7B2B006D1E74 /* FirstViewController.swift */,
-				95F793181ACC7B2B006D1E74 /* SecondViewController.swift */,
+				952E7BB41ADC509600CD41BE /* Home */,
+				952E7BB21ADC507E00CD41BE /* Tour Sites */,
+				952E7BB31ADC508B00CD41BE /* Map */,
 				95F7931A1ACC7B2B006D1E74 /* Main.storyboard */,
 				95F7931D1ACC7B2B006D1E74 /* Images.xcassets */,
 				95F7931F1ACC7B2B006D1E74 /* LaunchScreen.xib */,
 				95F793121ACC7B2B006D1E74 /* Supporting Files */,
-				95F793361AD30ECA006D1E74 /* Sites.plist */,
 			);
 			path = CivilWarDrivingTour;
 			sourceTree = "<group>";
@@ -219,9 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95F793191ACC7B2B006D1E74 /* SecondViewController.swift in Sources */,
+				95F793191ACC7B2B006D1E74 /* SitesTableViewController.swift in Sources */,
 				95F793151ACC7B2B006D1E74 /* AppDelegate.swift in Sources */,
-				95F793171ACC7B2B006D1E74 /* FirstViewController.swift in Sources */,
+				952E7BB81ADC523700CD41BE /* SiteTableViewCell.swift in Sources */,
+				95F793171ACC7B2B006D1E74 /* HomeViewController.swift in Sources */,
+				952E7BBC1AE07DB200CD41BE /* SitesWebViewController.swift in Sources */,
+				952E7BBA1ADC53D700CD41BE /* SiteMapViewController.swift in Sources */,
+				952E7BB61ADC50F200CD41BE /* SiteInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +462,7 @@
 				95F793321ACC7B2B006D1E74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95F793331ACC7B2B006D1E74 /* Build configuration list for PBXNativeTarget "CivilWarDrivingTourTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +471,7 @@
 				95F793351ACC7B2B006D1E74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
