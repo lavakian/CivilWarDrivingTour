@@ -55,7 +55,7 @@ class SiteMapViewController: UIViewController {
         mapView.addAnnotations(AN)
         
         
-        let span = MKCoordinateSpanMake(0.5, 0.5)
+        let span = MKCoordinateSpanMake(0.05, 0.05)
         let region = MKCoordinateRegion(center: location2, span: span)
         mapView.setRegion(region, animated: true)
     }
