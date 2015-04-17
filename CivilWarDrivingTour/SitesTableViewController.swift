@@ -39,12 +39,12 @@ class SitesTableViewController: UITableViewController {
         
         // Override point for customization after application launch.
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        let documentDirectoryPath = paths[0] as String
+        let documentDirectoryPath = paths[0] as! String
         let plistFilePathInDocumentDirectory = documentDirectoryPath + "/Sites.plist"
         var dictionaryFromFile: NSMutableDictionary? = NSMutableDictionary(contentsOfFile: plistFilePathInDocumentDirectory)
         if var dictionaryFromFileInDocumentDirectory = dictionaryFromFile{
             dict_sites = dictionaryFromFileInDocumentDirectory
-            siteNames = dictionaryFromFileInDocumentDirectory.allKeys as [String]
+            siteNames = dictionaryFromFileInDocumentDirectory.allKeys as! [String]
         }
         else {
             var plistFilePathInMainBundle = NSBundle.mainBundle().pathForResource("Sites", ofType: "plist")
@@ -54,7 +54,7 @@ class SitesTableViewController: UITableViewController {
         
         
         //println(siteNames)
-        siteNames = dict_sites.allKeys as [String]
+        siteNames = dict_sites.allKeys as! [String]
         //println(siteNames)
     }
     
@@ -100,7 +100,7 @@ class SitesTableViewController: UITableViewController {
         
         // Obtain the object reference of a reusable table view cell object instantiated under the identifier
         // TableViewCellReuseID, which was specified in the storyboard
-        var cell: SiteTableViewCell = tableView.dequeueReusableCellWithIdentifier("SiteCell") as SiteTableViewCell
+        var cell: SiteTableViewCell = tableView.dequeueReusableCellWithIdentifier("SiteCell") as! SiteTableViewCell
         
         // Obtain the name of the row from the table view list
         var rowName: String = siteNames[rowNumber]
@@ -138,7 +138,7 @@ class SitesTableViewController: UITableViewController {
         //var nameOfSelectedRow: String = siteNames[indexPath.row]
         
         //array3 = sites[nameOfSelectedRow]
-        var info = array3 as [String]
+        var info = array3 as! [String]
         
         
         siteName = selectedSite
@@ -194,7 +194,7 @@ class SitesTableViewController: UITableViewController {
             println(siteName)*/
             
             // Obtain the object reference of the destination view controller
-            var siteInfoViewController: SiteInfoViewController = segue.destinationViewController as SiteInfoViewController
+            var siteInfoViewController: SiteInfoViewController = segue.destinationViewController as! SiteInfoViewController
             
             //Pass the data object to the destination view controller object
             //siteInfoViewController.siteInfo = siteInfo

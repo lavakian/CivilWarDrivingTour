@@ -47,7 +47,7 @@ class SiteInfoViewController: UIViewController {
         if segue.identifier == "Web" {
             
             // Obtain the object reference of the destination view controller
-            var webViewController: SitesWebViewController = segue.destinationViewController as SitesWebViewController
+            var webViewController: SitesWebViewController = segue.destinationViewController as! SitesWebViewController
             webViewController.websiteURL = siteAddress
             
         }
