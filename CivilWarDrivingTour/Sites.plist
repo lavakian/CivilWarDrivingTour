@@ -2,19 +2,37 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Site 1</key>
-	<array/>
-	<key>New item - 3</key>
-	<array/>
-	<key>New item - 4</key>
-	<array/>
-	<key>New item - 5</key>
-	<array/>
-	<key>New item - 6</key>
-	<array/>
-	<key>New item</key>
+	<key>Cambria Depot</key>
 	<array>
-		<string></string>
+		<string>Built in 1868 in the Tuscan Italianate style \n Replaced original 1856 depot destroyed by Union soldiers in April 1865 \n One of only two remaining Reconstruction-era depots in Virginias</string>
+		<string>The town of Cambria, originally known as Bangs, grew up around the Virginia and Tennessee Railroad depot, first built in 1856 about a mile away from the Christiansburg town square. Union forces under General George B. Stoneman burned the original depot and destroyed tracks during their April 1865 raid into Southwest Virginia. In 1868, a new depot was constructed in the Tuscan Italianate style. The Cambria Depot is one of only two railroad depots in Virginia built during the Reconstruction period and still standing today. In 1906, Cambria incorporated as a town (it is now part of Christiansburg) and a new passenger station was built down the tracks to the east. The old depot was converted into a freight station and became the hub for all goods shipped by rail into Montgomery and Floyd Counties for almost a hundred years, until service was discontinued in 1960. The 1868 building was restored in the 1980s.</string>
+		<string>630 Depot St. NE | Christiansburg, VA 24073</string>
+		<string>From Blacksburg, take 460 Eastbound to the Downtown Christiansburg exit. Take the first left at the traffic light immediately after exiting onto Cambria Street. Follow Cambria Street until it becomes Depot Street at the Cambria Depot.</string>
+		<string>http://www.historiccambria.com/</string>
+	</array>
+	<key>Christiansburg Institute</key>
+	<array>
+		<string>Founded in 1867 by Captain Charles Schaffer of the Freedmen’s Bureau as an institution to educate freed slaves \n Booker T. Washington became adviser to the school in 1896 \n Christiansburg Institute served the educational needs of African Americans from fifteen counties until it closed in 1966</string>
+		<string>Christiansburg Institute began in February 1867 with the mission of educating former slaves. The school was founded by Captain Charles S. Schaeffer, a Union soldier from Philadelphia who later became a Baptist minister. Working for the Freedmen’s Bureau, Schaeffer came to Christiansburg after the Civil War and started teaching twelve former slaves in a rented room. By 1869, the Hill School, as it was called, had grown to include over two hundred students. Beginning in 1870, a Quaker group called the Friends’ Freedmen’s Association began helping Schaeffer fund the school after the Freedmen’s Bureau stopped its support. In the 1880s Schaeffer turned over control of the school to a completely African-American staff. He retired to focus on ministry before his death in 1899. During his time in Southwest Virginia, Schaeffer organized twenty-nine African American churches. The 1885 Hill School and Schaeffer Memorial Baptist Church still stand at 570 High Street in Christiansburg. / A new era for the Christiansburg Institute began in 1896 when Booker T. Washington, founder of Tuskegee Institute, became adviser to CI. The Christiansburg Institute implemented a curriculum similar to those at Tuskegee and Hampton Institutes. The Institute continued to grow throughout the early twentieth century, expanding to property at 140 Scattergood Drive, where the 1927 Edgar A. Long Building, named for the principal of the Institute from 1906-1924, still stands. In 1947, the Friends’ Freedmen’s Associations deeded the Institute to the Montgomery County, Radford, and Pulaski County school systems. During the years of segregation in Southwest Virginia, the Institute served the educational needs of African American students from up to fifteen counties at a time. Christiansburg Institute closed in 1966 when local public schools integrated.</string>
+		<string>140 Scattergood Drive NW | Christiansburg, VA 24073</string>
+		<string>From Blacksburg, take 460 Eastbound to the Downtown Christiansburg exit. Follow North Franklin Street towards downtown. Scattergood Drive will be on your right just after passing Christiansburg High School.</string>
+		<string>http://www.christiansburginstitute.org/</string>
+	</array>
+	<key>Christiansburg Presbyterian Church</key>
+	<array>
+		<string>Founded in 1867 by Captain Charles Schaffer of the Freedmen’s Bureau as an institution to educate freed slaves \n Booker T. Washington became adviser to the school in 1896 \n Christiansburg Institute served the educational needs of African Americans from fifteen counties until it closed in 1966</string>
+		<string>The Presbyterian Church is the oldest continually active church in Christiansburg, dating to 1853. James E. Crush, along with James and Samuel Hickok, constructed the Greek Revival structure, referring to the design handbooks of influential Boston architect Asher Benjamin. Crush and his carpenters were from Fincastle, Botetourt County, where several similar churches survive. The church steeple was restored for the first time in 1995. One interesting feature of this antebellum church is the outside entrance to a gallery, built, it is thought, to allow slaves to attend services while remaining separate from the free congregation. There is no way to access the gallery from inside the church. The additions behind and to the right of the church date to 1906 and 1927, respectively. / Next door to the church on the left is the Presbyterian Church Manse. Completed in 1876, this building served as the residence for Christiansburg’s Presbyterian ministers until 1969. It replaced the Pepper House, today the Montgomery Museum on South Pepper Street, which was the original Presbyterian manse. Both the current church and the original manse on Pepper Street owe their existence to Reverend Nicholas Chevalier, pastor from 1839-1856. In 1855, he commissioned Edward Beyer to paint a view of Christiansburg that now resides at the Virginia Historical Society in Richmond. Reverend Chevalier was also the brother-in-law of Confederate cavalry general J.E.B. Stuart, having married Stuart’s sister Bertha.</string>
+		<string>107-111 West Main Street | Christiansburg, VA 24073</string>
+		<string>From Blacksburg, take 460 Eastbound to the Downtown Christiansburg exit. Follow North Franklin Street downtown and take a right onto West Main Street. The church is a block and a half down on the right.</string>
+		<string>http://www.christiansburgpres.org/</string>
+	</array>
+	<key>Kentland Plantation</key>
+	<array>
+		<string>Once the largest plantation in Montgomery County and a supplier of meat to the Confederate Army / The manor house was built c. 1835, possibly by a former Hessian soldier, John Swope / Union forces encamped here for a few days after the Battle of Cloyd’s Mountain / Former slaves from the plantation established the Wake Forest community after emancipation</string>
+		<string>The manor house at Kentland was built sometime between 1820 and 1835 in the Federal style. Kentland is named for James Randal Kent and his descendants, although the plantation did not bear this name until after the Civil War. The land was originally known as Buchanan’s Bottom. The house is a two-story, five-bay structure. Family tradition holds that the architect of Kentland was a former Hessian soldier named John Swope. The bricks were made by hand by slaves. An original hexagonal smokehouse and several later farm buildings still stand on the property, which is owned today by Virginia Tech and used as the College of Agriculture and Life Sciences Farm. / Kent’s plantation was the largest and most prosperous in Montgomery County on the eve of the Civil War. Over 120 slaves worked the farm, and James Randal Kent may have owned as many as 300 on all his properties combined. The Kent family property around Buchanan’s Bottom alone totaled 5,850 acres. When Virginia seceded in 1861, James Randal Kent, already a major in the local militia, helped organize Confederate troops and contracted to supply meat and other food to the new Confederate Army. Kentland, along with other Montgomery County plantations, was the target of an alleged 1861 plot by local unionists to foment a slave insurrection. / The war reached Kentland in May 1864, when General George Crook’s Yankee soldiers appeared at the plantation following the Battle of Cloyd’s Mountain. For several days, Federal troops camped on the Kent property, destroying the meat destined for Confederate soldiers and the family table. The soldiers also burned some outbuildings and would have burned the manor house had James Randal Kent not refused to leave.</string>
+		<string>ADDRESS</string>
+		<string>DIRECTIONS</string>
+		<string>WEBSITE</string>
 	</array>
 </dict>
 </plist>
