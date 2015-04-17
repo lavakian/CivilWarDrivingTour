@@ -229,7 +229,7 @@
         <!--Map-->
         <scene sceneID="R7G-Nj-z72">
             <objects>
-                <viewController id="0mS-t5-Vez" sceneMemberID="viewController">
+                <viewController id="0mS-t5-Vez" customClass="SiteMapViewController" customModule="CivilWarDrivingTour" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F8D-An-qol"/>
                         <viewControllerLayoutGuide type="bottom" id="4DB-PF-0CZ"/>
@@ -245,6 +245,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="cVZ-BW-cbg"/>
+                    <connections>
+                        <outlet property="mapView" destination="qlQ-uc-EJb" id="8E7-QA-euP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y61-MJ-zui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
