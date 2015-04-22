@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -142,14 +142,14 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZj-9y-O8Y">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZj-9y-O8Y">
                                 <rect key="frame" x="16" y="208" width="382" height="109"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fun Facts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yL8-4z-779">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fun Facts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yL8-4z-779">
                                 <rect key="frame" x="103" y="179" width="208" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -165,9 +165,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 Dumb Lane | Nigeria, VA 24060" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfW-1C-97M">
-                                <rect key="frame" x="27" y="128" width="360" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="500 Dumb Lane | Nigeria, VA 24060" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfW-1C-97M">
+                                <rect key="frame" x="0.0" y="128" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -196,10 +196,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlp-Ku-O2H">
-                                <rect key="frame" x="0.0" y="510" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="511" width="414" height="30"/>
                                 <state key="normal" title="View On Map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="map:" destination="vrA-cD-3v6" eventType="touchDown" id="YeN-vk-1VT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
@@ -211,7 +214,7 @@
                             <constraint firstItem="UfW-1C-97M" firstAttribute="top" secondItem="bQD-au-g2J" secondAttribute="bottom" constant="7" id="E95-fd-Iuz"/>
                             <constraint firstItem="bQD-au-g2J" firstAttribute="centerX" secondItem="UfW-1C-97M" secondAttribute="centerX" id="GvJ-Zc-cnh"/>
                             <constraint firstItem="yL8-4z-779" firstAttribute="leading" secondItem="xh1-uI-zVf" secondAttribute="leadingMargin" constant="87" id="IS7-eQ-Bff"/>
-                            <constraint firstItem="owC-6X-DD2" firstAttribute="top" secondItem="Mlp-Ku-O2H" secondAttribute="bottom" constant="1" id="KNy-FI-5dH"/>
+                            <constraint firstItem="owC-6X-DD2" firstAttribute="top" secondItem="Mlp-Ku-O2H" secondAttribute="bottom" id="KNy-FI-5dH"/>
                             <constraint firstItem="NZj-9y-O8Y" firstAttribute="leading" secondItem="82m-oe-vqG" secondAttribute="leading" id="KxX-Jk-7o1"/>
                             <constraint firstItem="h10-4l-5Zj" firstAttribute="leading" secondItem="xh1-uI-zVf" secondAttribute="leading" id="PfA-YG-Lqo"/>
                             <constraint firstAttribute="trailing" secondItem="h10-4l-5Zj" secondAttribute="trailing" id="SEP-Qp-mxU"/>
@@ -229,7 +232,7 @@
                             <constraint firstItem="h10-4l-5Zj" firstAttribute="trailing" secondItem="Mlp-Ku-O2H" secondAttribute="trailing" id="mwd-vR-yxY"/>
                             <constraint firstItem="62y-2T-wdf" firstAttribute="top" secondItem="owC-6X-DD2" secondAttribute="bottom" constant="116" id="pPk-OH-WoW"/>
                             <constraint firstItem="NZj-9y-O8Y" firstAttribute="top" secondItem="yL8-4z-779" secondAttribute="bottom" constant="8" symbolic="YES" id="rz0-dV-Gzv"/>
-                            <constraint firstItem="UfW-1C-97M" firstAttribute="leading" secondItem="xh1-uI-zVf" secondAttribute="leadingMargin" constant="11" id="x6K-jt-UE4"/>
+                            <constraint firstItem="UfW-1C-97M" firstAttribute="leading" secondItem="xh1-uI-zVf" secondAttribute="leadingMargin" constant="-16" id="x6K-jt-UE4"/>
                             <constraint firstItem="bQD-au-g2J" firstAttribute="top" secondItem="NBn-zT-TCL" secondAttribute="bottom" id="y4h-UG-qgu"/>
                             <constraint firstItem="h10-4l-5Zj" firstAttribute="leading" secondItem="Mlp-Ku-O2H" secondAttribute="leading" id="yVx-4f-azF"/>
                         </constraints>
@@ -240,6 +243,7 @@
                         <outlet property="siteDescription" destination="82m-oe-vqG" id="9Mn-aB-NFv"/>
                         <outlet property="siteTitle" destination="bQD-au-g2J" id="Q3v-5A-n09"/>
                         <segue destination="7ZC-zc-4aO" kind="show" identifier="Web" id="fIA-fx-Yra"/>
+                        <segue destination="0mS-t5-Vez" kind="show" identifier="MapView" id="NfL-9c-9vv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="co8-AF-pHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -511,4 +515,7 @@
     <resources>
         <image name="first" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NfL-9c-9vv"/>
+    </inferredMetricsTieBreakers>
 </document>

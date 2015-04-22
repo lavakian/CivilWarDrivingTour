@@ -162,27 +162,33 @@ class SitesTableViewController: UITableViewController {
     */
     
     // This is the method invoked when the user taps the Detail accessory button (circle icon with i)
-    /*override func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
         
         // Obtain the name of the genre of the selected movie
-        var selectedDiningHall = siteNames[indexPath.section]
+        var selectedSite = siteNames[indexPath.section]
+        println(selectedSite)
+        
+        array3 = dict_sites[selectedSite]
+        
+        println(array3)
         
         // Obtain the list of cities in the country as Objective-C array
         //var movies: AnyObject? = applicationDelegate.dict_Genre_titles[selectedGenreName]
-        var dininghalls = dict_sites[selectedDiningHall] as NSMutableDictionary
-        diningHallNames = dininghalls.allKeys as [String]
+        //var sites = dict_sites[selectedSite] as NSMutableDictionary
+        //siteNames = sites.allKeys as [String]
         // Convert the Objective-C array to Swift array
-        var nameOfSelectedRow: String = diningHallNames[indexPath.row]
+        //var nameOfSelectedRow: String = siteNames[indexPath.row]
         
-        array3 = dininghalls[nameOfSelectedRow]
-        var info = array3 as [String]
+        //array3 = sites[nameOfSelectedRow]
+        var info = array3 as! [String]
         
-        diningHall = selectedDiningHall
-        siteName = info[0]
+        
+        siteName = selectedSite
         siteInfo = info
         
+        
         performSegueWithIdentifier("SiteInfo", sender: self)
-    }*/
+    }
     
     
     /************************
