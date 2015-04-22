@@ -281,6 +281,108 @@
             </objects>
             <point key="canvasLocation" x="2853" y="-755"/>
         </scene>
+        <!--Comments Table View Controller-->
+        <scene sceneID="u2J-QR-Uc6">
+            <objects>
+                <tableViewController id="8Sy-kd-InQ" customClass="CommentsTableViewController" customModule="CivilWarDrivingTour" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="22" sectionFooterHeight="22" id="Q7e-74-7Bl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="106" id="9sv-xS-8km" customClass="SweetTableViewCell" customModule="CivilWarDrivingTour" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9sv-xS-8km" id="8K4-Zp-GSv">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuG-3t-BQD">
+                                            <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTC-EK-6NZ">
+                                            <rect key="frame" x="364" y="8" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8s-Vt-hMP">
+                                            <rect key="frame" x="8" y="32" width="398" height="55"/>
+                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8Sy-kd-InQ" id="1ZP-mx-o6W"/>
+                            <outlet property="delegate" destination="8Sy-kd-InQ" id="XRl-We-Ncf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="rJz-yR-0ge">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="z9F-mJ-NDa">
+                            <connections>
+                                <segue destination="CZw-e6-zF1" kind="push" id="sDK-Fq-hrP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFL-Yd-SZp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3479" y="52"/>
+        </scene>
+        <!--Compose View Controller-->
+        <scene sceneID="wjN-XT-Aq6">
+            <objects>
+                <viewController id="CZw-e6-zF1" customClass="ComposeViewController" customModule="CivilWarDrivingTour" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yHd-hv-ywv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uou-K9-AfQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qog-DH-r9j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Sample Text" translatesAutoresizingMaskIntoConstraints="NO" id="TRB-Ij-T6V">
+                                <rect key="frame" x="29" y="105" width="357" height="132"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riY-gf-xUV">
+                                <rect key="frame" x="344" y="245" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="riY-gf-xUV" firstAttribute="top" secondItem="TRB-Ij-T6V" secondAttribute="bottom" constant="8" symbolic="YES" id="Hub-iw-JyO"/>
+                            <constraint firstItem="TRB-Ij-T6V" firstAttribute="centerX" secondItem="qog-DH-r9j" secondAttribute="centerX" id="OF8-RM-Tar"/>
+                            <constraint firstItem="TRB-Ij-T6V" firstAttribute="top" secondItem="yHd-hv-ywv" secondAttribute="bottom" constant="41" id="SVh-4G-Tx0"/>
+                            <constraint firstItem="TRB-Ij-T6V" firstAttribute="leading" secondItem="qog-DH-r9j" secondAttribute="leadingMargin" constant="13" id="SzV-Hy-cSH"/>
+                            <constraint firstItem="TRB-Ij-T6V" firstAttribute="trailing" secondItem="riY-gf-xUV" secondAttribute="trailing" id="Vpm-un-XEb"/>
+                            <constraint firstItem="Uou-K9-AfQ" firstAttribute="top" secondItem="riY-gf-xUV" secondAttribute="bottom" constant="421" id="pcP-DR-0Yj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wvy-ok-ByO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="N9e-Dp-D3T"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="charRemainingLabel" destination="riY-gf-xUV" id="UWB-io-JZk"/>
+                        <outlet property="characterRemainingLabel" destination="riY-gf-xUV" id="6KO-DM-tGJ"/>
+                        <outlet property="sweetTextView" destination="TRB-Ij-T6V" id="KqB-l2-eol"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ieO-cC-V6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4028" y="52"/>
+        </scene>
         <!--Tour-->
         <scene sceneID="Mpt-NG-Hs2">
             <objects>
@@ -393,6 +495,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-520" y="64"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7L9-7U-Vr7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="She-8q-zSN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="TKc-Ya-dWV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DX6-cE-8H0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Sy-kd-InQ" kind="relationship" relationship="rootViewController" id="ZE4-ZM-u6E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azx-Wt-E3m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2853" y="86"/>
         </scene>
     </scenes>
     <resources>
