@@ -53,9 +53,11 @@ class SiteInfoViewController: UIViewController {
             // Obtain the object reference of the destination view controller
             var webViewController: SitesWebViewController = segue.destinationViewController as! SitesWebViewController
             webViewController.websiteURL = siteAddress
+            webViewController.siteName = siteName
             
         } else if segue.identifier == "MapView" {
             var mapViewController: SiteMapViewController = segue.destinationViewController as! SiteMapViewController
+            mapViewController.siteName = siteName
         }
     }
     

@@ -10,10 +10,12 @@ import UIKit
 import MapKit
 
 class SiteMapViewController: UIViewController {
-
+    var siteName: String = ""
     @IBOutlet var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = siteName
 
         // Do any additional setup after loading the view.
                 // 1
