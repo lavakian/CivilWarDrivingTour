@@ -42,28 +42,22 @@ class SiteInfoViewController: UIViewController {
             performSegueWithIdentifier("Web", sender: self)
     }
     
+    @IBAction func map(sender: UIButton) {
+        performSegueWithIdentifier("MapView", sender: self)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
         if segue.identifier == "Web" {
             
             // Obtain the object reference of the destination view controller
-            var webViewController: SitesWebViewController = segue.destinationViewController as SitesWebViewController
+            var webViewController: SitesWebViewController = segue.destinationViewController as! SitesWebViewController
             webViewController.websiteURL = siteAddress
             
+        } else if segue.identifier == "MapView" {
+            var mapViewController: SiteMapViewController = segue.destinationViewController as! SiteMapViewController
         }
     }
-    
-    /*@IBAction func shareToFacebook(){
-        var shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-        self.presentViewController(shareToFacebook, animated: true, completion: nil)
-        shareToFacebook.setInitialText("I just ate a " + foodName + " at " + diningHall + "!");
-    }
-    
-    @IBAction func shareToTwitter(){
-        var shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        self.presentViewController(shareToTwitter, animated: true, completion: nil)
-        shareToTwitter.setInitialText("I just ate a " + foodName + " at " + diningHall + "!");
-    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -162,10 +162,13 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlp-Ku-O2H">
-                                <rect key="frame" x="0.0" y="510" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="511" width="414" height="30"/>
                                 <state key="normal" title="View On Map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="map:" destination="vrA-cD-3v6" eventType="touchDown" id="YeN-vk-1VT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
@@ -176,6 +179,7 @@
                         <outlet property="siteDescription" destination="82m-oe-vqG" id="9Mn-aB-NFv"/>
                         <outlet property="siteTitle" destination="bQD-au-g2J" id="Q3v-5A-n09"/>
                         <segue destination="7ZC-zc-4aO" kind="show" identifier="Web" id="fIA-fx-Yra"/>
+                        <segue destination="0mS-t5-Vez" kind="show" identifier="MapView" id="NfL-9c-9vv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="co8-AF-pHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -314,4 +318,7 @@
     <resources>
         <image name="first" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NfL-9c-9vv"/>
+    </inferredMetricsTieBreakers>
 </document>
