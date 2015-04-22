@@ -25,6 +25,9 @@
 		940BEC361AE18F1B003329A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BEC351AE18F1B003329A2 /* SystemConfiguration.framework */; };
 		940BEC381AE18F23003329A2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BEC371AE18F23003329A2 /* libz.dylib */; };
 		940BEC3A1AE18F2E003329A2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BEC391AE18F2E003329A2 /* libsqlite3.dylib */; };
+		9485C9201AE825A800AFD5AA /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9485C91F1AE825A800AFD5AA /* CommentsTableViewController.swift */; };
+		9485C9231AE8286900AFD5AA /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9485C9221AE8286900AFD5AA /* ComposeViewController.swift */; };
+		9485C9251AE82CF300AFD5AA /* SweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9485C9241AE82CF300AFD5AA /* SweetTableViewCell.swift */; };
 		952E7BB61ADC50F200CD41BE /* SiteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E7BB51ADC50F200CD41BE /* SiteInfoViewController.swift */; };
 		952E7BB81ADC523700CD41BE /* SiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E7BB71ADC523700CD41BE /* SiteTableViewCell.swift */; };
 		952E7BBA1ADC53D700CD41BE /* SiteMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E7BB91ADC53D700CD41BE /* SiteMapViewController.swift */; };
@@ -69,6 +72,9 @@
 		940BEC371AE18F23003329A2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		940BEC391AE18F2E003329A2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		940BEC3B1AE18F4D003329A2 /* CivilWarDrivingTour-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CivilWarDrivingTour-Bridging-Header.h"; sourceTree = "<group>"; };
+		9485C91F1AE825A800AFD5AA /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentsTableViewController.swift; path = ../CommentsTableViewController.swift; sourceTree = "<group>"; };
+		9485C9221AE8286900AFD5AA /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		9485C9241AE82CF300AFD5AA /* SweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetTableViewCell.swift; sourceTree = "<group>"; };
 		952E7BB51ADC50F200CD41BE /* SiteInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteInfoViewController.swift; sourceTree = "<group>"; };
 		952E7BB71ADC523700CD41BE /* SiteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteTableViewCell.swift; sourceTree = "<group>"; };
 		952E7BB91ADC53D700CD41BE /* SiteMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteMapViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +154,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9485C9211AE8280B00AFD5AA /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				9485C91F1AE825A800AFD5AA /* CommentsTableViewController.swift */,
+				9485C9221AE8286900AFD5AA /* ComposeViewController.swift */,
+				9485C9241AE82CF300AFD5AA /* SweetTableViewCell.swift */,
+			);
+			name = Comments;
+			sourceTree = "<group>";
+		};
 		952E7BB11ADC507200CD41BE /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +223,7 @@
 		95F793111ACC7B2B006D1E74 /* CivilWarDrivingTour */ = {
 			isa = PBXGroup;
 			children = (
+				9485C9211AE8280B00AFD5AA /* Comments */,
 				952E7BB11ADC507200CD41BE /* Data */,
 				95F793141ACC7B2B006D1E74 /* AppDelegate.swift */,
 				952E7BB41ADC509600CD41BE /* Home */,
@@ -346,12 +363,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9485C9231AE8286900AFD5AA /* ComposeViewController.swift in Sources */,
 				95F793191ACC7B2B006D1E74 /* SitesTableViewController.swift in Sources */,
 				95F793151ACC7B2B006D1E74 /* AppDelegate.swift in Sources */,
 				952E7BB81ADC523700CD41BE /* SiteTableViewCell.swift in Sources */,
+				9485C9201AE825A800AFD5AA /* CommentsTableViewController.swift in Sources */,
 				95F793171ACC7B2B006D1E74 /* HomeViewController.swift in Sources */,
 				952E7BBC1AE07DB200CD41BE /* SitesWebViewController.swift in Sources */,
 				952E7BBA1ADC53D700CD41BE /* SiteMapViewController.swift in Sources */,
+				9485C9251AE82CF300AFD5AA /* SweetTableViewCell.swift in Sources */,
 				952E7BB61ADC50F200CD41BE /* SiteInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
