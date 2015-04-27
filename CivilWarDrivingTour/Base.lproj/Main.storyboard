@@ -450,11 +450,11 @@
             </objects>
             <point key="canvasLocation" x="1497" y="999"/>
         </scene>
-        <!--Tour-->
+        <!--Go!-->
         <scene sceneID="G5P-Un-74I">
             <objects>
                 <navigationController id="FSQ-9J-25z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tour" id="812-P3-wOk"/>
+                    <tabBarItem key="tabBarItem" title="Go!" id="812-P3-wOk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CgJ-Nn-nhg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
