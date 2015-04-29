@@ -10,6 +10,33 @@ import UIKit
 
 class CommentsTableViewController: UITableViewController {
 
+    
+    var timelineData:NSMutableArray! = NSMutableArray()
+    
+    @IBAction func loadData(){
+        timelineData.removeAllObjects()
+        var findTimelineData:PFQuery = PFQuery(className: "Comments")
+        findTimelineData.findObjectsInBackgroundWithBlock{
+            (objects:[AnyObject]?, error:NSError?)->Void in
+            
+            if error == nil{
+                if let theObjects = objects{
+                for object in theObjects{
+                    let sweet:PFObject = object as! PFObject
+                    self.timelineData.addObject(sweet)
+                    }
+                }
+                let array:NSArray = self.timelineData.reverseObjectEnumerator().allObjects
+                self.timelineData = NSMutableArray(array: array)
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool){
+        self.loadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,24 +57,27 @@ class CommentsTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return timelineData.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell:SweetTableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! SweetTableViewCell
 
         // Configure the cell...
 
+        let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as! PFObject
+        cell.sweetTextView.text = sweet.objectForKey("content") as! String
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

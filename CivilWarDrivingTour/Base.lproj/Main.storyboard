@@ -312,6 +312,11 @@
                                         </textView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="sweetTextView" destination="I8s-Vt-hMP" id="alo-i2-gda"/>
+                                    <outlet property="timestampLabel" destination="DTC-EK-6NZ" id="TfO-pG-gEw"/>
+                                    <outlet property="usernameLabel" destination="NuG-3t-BQD" id="sxy-hg-X26"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -371,7 +376,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="charRemainingLabel" destination="riY-gf-xUV" id="UWB-io-JZk"/>
-                        <outlet property="characterRemainingLabel" destination="riY-gf-xUV" id="6KO-DM-tGJ"/>
                         <outlet property="sweetTextView" destination="TRB-Ij-T6V" id="KqB-l2-eol"/>
                     </connections>
                 </viewController>
@@ -450,10 +454,10 @@
             </objects>
             <point key="canvasLocation" x="1497" y="999"/>
         </scene>
-        <!--Go!-->
+        <!--Take the Tour!-->
         <scene sceneID="G5P-Un-74I">
             <objects>
-                <navigationController id="FSQ-9J-25z" sceneMemberID="viewController">
+                <navigationController title="Take the Tour!" id="FSQ-9J-25z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Go!" id="812-P3-wOk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CgJ-Nn-nhg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
