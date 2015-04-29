@@ -39,7 +39,7 @@ class CommentsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Visitor Comments"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -73,7 +73,23 @@ class CommentsTableViewController: UITableViewController {
         // Configure the cell...
 
         let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as! PFObject
+        
+        cell.sweetTextView.alpha = 0
+        cell.timestampLabel.alpha = 0
+        cell.usernameLabel.alpha = 0
+    
         cell.sweetTextView.text = sweet.objectForKey("content") as! String
+        var dataFormatter:NSDateFormatter = NSDateFormatter()
+        dataFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        cell.timestampLabel.text = dataFormatter.stringFromDate(sweet.createdAt!)
+        
+        cell.usernameLabel.text = "Location"
+        UIView.animateWithDuration(0.5, animations: {
+            cell.sweetTextView.alpha = 1
+            cell.timestampLabel.alpha = 1
+            cell.usernameLabel.alpha = 1
+        })
+        
         
         return cell
     }

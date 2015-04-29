@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class ComposeViewController: UIViewController, UITextViewDelegate {
 
     
     @IBOutlet var sweetTextView: UITextView? = UITextView()
@@ -19,6 +19,7 @@ class ComposeViewController: UIViewController {
         sweetTextView!.layer.borderColor = UIColor.blackColor().CGColor
         sweetTextView!.layer.borderWidth = 0.5
         sweetTextView!.layer.cornerRadius = 5
+        sweetTextView!.delegate = self
         sweetTextView!.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
