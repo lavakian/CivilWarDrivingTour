@@ -129,7 +129,7 @@ class SitesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         // Obtain the name of the genre of the selected movie
-        var selectedSite = siteNames[indexPath.section]
+        var selectedSite = siteNames[indexPath.row]
         println(selectedSite)
         
         array3 = dict_sites[selectedSite]
