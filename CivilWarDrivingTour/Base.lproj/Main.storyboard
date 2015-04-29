@@ -8,7 +8,6 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="CivilWarDrivingTour" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -30,8 +29,9 @@
                             <constraint firstItem="FWz-B3-VG0" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="rfN-4l-yAK"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Cars Filled-50" id="acW-dT-cKf"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="751" y="-1604"/>
         </scene>
@@ -363,7 +363,7 @@
         <scene sceneID="Mpt-NG-Hs2">
             <objects>
                 <navigationController id="E4w-Ri-2Q3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tour" id="wUT-DT-MaG"/>
+                    <tabBarItem key="tabBarItem" title="Tour" image="Conference Filled-50" id="wUT-DT-MaG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z5b-Ib-drJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -394,7 +394,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="cVZ-BW-cbg"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map Marker Filled-50" id="cVZ-BW-cbg"/>
                     <connections>
                         <outlet property="mapView" destination="qlQ-uc-EJb" id="8E7-QA-euP"/>
                     </connections>
@@ -434,7 +434,7 @@
         <scene sceneID="G5P-Un-74I">
             <objects>
                 <navigationController title="Take the Tour!" id="FSQ-9J-25z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Go!" id="812-P3-wOk"/>
+                    <tabBarItem key="tabBarItem" title="Go!" image="Go Filled-50" id="812-P3-wOk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CgJ-Nn-nhg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -490,10 +490,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="Cars Filled-50" width="50" height="50"/>
+        <image name="Conference Filled-50" width="50" height="50"/>
+        <image name="Go Filled-50" width="50" height="50"/>
+        <image name="Map Marker Filled-50" width="50" height="50"/>
         <image name="welcome" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NfL-9c-9vv"/>
+        <segue reference="yGQ-jo-58m"/>
     </inferredMetricsTieBreakers>
 </document>
