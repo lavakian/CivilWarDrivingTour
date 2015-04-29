@@ -35,14 +35,7 @@ class SitesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("got here")
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
-        }
-        println("ran parse code")
-        
+                
         // Override point for customization after application launch.
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let documentDirectoryPath = paths[0] as! String
