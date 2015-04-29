@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -8,6 +8,7 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="CivilWarDrivingTour" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -17,60 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcT-2Q-lOq">
-                                <rect key="frame" x="0.0" y="68" width="414" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="LXP-Pa-hpS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Southwest Virginia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNd-aN-WFb">
-                                <rect key="frame" x="0.0" y="243" width="414" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="hOv-0j-seH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Civil War Driving Tour!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCM-C0-Wxk">
-                                <rect key="frame" x="0.0" y="347" width="414" height="124"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to your personal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zB-dw-odK">
-                                <rect key="frame" x="0.0" y="172" width="414" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="9c2-LP-Mq9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="FWz-B3-VG0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="tNd-aN-WFb" firstAttribute="top" secondItem="1zB-dw-odK" secondAttribute="bottom" constant="39" id="37N-vm-vrC"/>
-                            <constraint firstItem="ZCM-C0-Wxk" firstAttribute="top" secondItem="tNd-aN-WFb" secondAttribute="bottom" constant="8" symbolic="YES" id="6ez-PU-PE1"/>
-                            <constraint firstItem="KcT-2Q-lOq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Inl-kv-7bu"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ZCM-C0-Wxk" secondAttribute="bottom" constant="216" id="LJf-Fj-ngQ"/>
-                            <constraint firstItem="1zB-dw-odK" firstAttribute="top" secondItem="KcT-2Q-lOq" secondAttribute="bottom" constant="57" id="Pgl-BI-JAj"/>
-                            <constraint firstItem="1zB-dw-odK" firstAttribute="leading" secondItem="KcT-2Q-lOq" secondAttribute="leading" id="UTv-Rc-GYz"/>
-                            <constraint firstItem="ZCM-C0-Wxk" firstAttribute="leading" secondItem="tNd-aN-WFb" secondAttribute="leading" id="XnF-56-D3Z"/>
-                            <constraint firstItem="ZCM-C0-Wxk" firstAttribute="trailing" secondItem="tNd-aN-WFb" secondAttribute="trailing" id="dHC-9p-lFj"/>
-                            <constraint firstItem="1zB-dw-odK" firstAttribute="trailing" secondItem="tNd-aN-WFb" secondAttribute="trailing" id="jos-U9-rxY"/>
-                            <constraint firstItem="KcT-2Q-lOq" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="48" id="pe5-cE-YRQ"/>
-                            <constraint firstAttribute="trailing" secondItem="ZCM-C0-Wxk" secondAttribute="trailing" id="qtn-qh-HqK"/>
-                            <constraint firstItem="tNd-aN-WFb" firstAttribute="leading" secondItem="1zB-dw-odK" secondAttribute="leading" id="vEP-Kg-O3v"/>
-                            <constraint firstItem="KcT-2Q-lOq" firstAttribute="trailing" secondItem="1zB-dw-odK" secondAttribute="trailing" id="yvH-nU-FFy"/>
+                            <constraint firstItem="FWz-B3-VG0" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="0Me-Dx-5T2"/>
+                            <constraint firstAttribute="bottom" secondItem="FWz-B3-VG0" secondAttribute="bottom" id="DHO-46-W9m"/>
+                            <constraint firstAttribute="trailing" secondItem="FWz-B3-VG0" secondAttribute="trailing" id="OiP-5y-FCI"/>
+                            <constraint firstItem="FWz-B3-VG0" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="rfN-4l-yAK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="751" y="-1604"/>
         </scene>
@@ -208,7 +169,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Mlp-Ku-O2H" firstAttribute="trailing" secondItem="owC-6X-DD2" secondAttribute="trailing" id="4vW-aK-7pd"/>
                             <constraint firstItem="NZj-9y-O8Y" firstAttribute="trailing" secondItem="82m-oe-vqG" secondAttribute="trailing" id="6hd-Ft-pvj"/>
@@ -530,6 +491,7 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="welcome" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NfL-9c-9vv"/>
