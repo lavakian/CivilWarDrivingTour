@@ -42,18 +42,18 @@ class SitesWebViewController: UIViewController, UIWebViewDelegate {
     * UIWebView Delegate Methods: These methods must be implemented whenever UIWebView is used.
     ******************************************************************************************/
     
-    func webViewDidStartLoad(webView: UIWebView!) {
+    func webViewDidStartLoad(webView: UIWebView) {
         // Starting to load the web page. Show the animated activity indicator in the status bar
         // to indicate to the user that the UIWebVIew object is busy loading the web page.
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
     }
     
-    func webViewDidFinishLoad(webView: UIWebView!) {
+    func webViewDidFinishLoad(webView: UIWebView) {
         // Finished loading the web page. Hide the activity indicator in the status bar.
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
     
-    func webView(webView: UIWebView!, didFailLoadWithError error: NSError!) {
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
         /*
         Ignore this error if the page is instantly redirected via javascript or in another way.
         NSURLErrorCancelled is returned when an asynchronous load is cancelled, which happens
