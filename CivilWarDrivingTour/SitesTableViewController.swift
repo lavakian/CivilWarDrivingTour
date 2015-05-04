@@ -25,7 +25,7 @@ class SitesTableViewController: UITableViewController {
     
     // dataObjectToPass is the data object to pass to the downstream view controller
     var siteName = ""
-    var siteInfo = ["", "", "", "", ""] // 5 pieces of data?
+    var siteInfo = ["", "", "", "", "", "", ""] // 7 pieces of data?
     
     /*
     -----------------------

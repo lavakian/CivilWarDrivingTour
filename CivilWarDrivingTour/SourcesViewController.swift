@@ -12,11 +12,11 @@ class SourcesViewController: UIViewController {
     
     var siteName = ""
     var siteAddress = ""
-    var siteInfo = ["", "", "", "", ""]
+    var siteInfo = ["", "", "", "", "", "", ""]
     
     @IBOutlet var siteTitle: UILabel!
     @IBOutlet var address: UILabel!
-    @IBOutlet var directions: UITextView!
+    @IBOutlet var sources: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class SourcesViewController: UIViewController {
         
         self.address.text = siteInfo[2]
         
-        self.directions.text = siteInfo[3]
+        self.sources.text = siteInfo[3]
         
         // Do any additional setup after loading the view.
     }

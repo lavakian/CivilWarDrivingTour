@@ -18,7 +18,7 @@ class SiteInfoViewController: UIViewController {
     @IBOutlet var siteDescription: UITextView!
     
     var siteName = ""
-    var siteInfo = ["", "", "", "", ""]
+    var siteInfo = ["", "", "", "", "", "", ""]
     var siteAddress = ""
     var imageName = ""
     
@@ -52,6 +52,10 @@ class SiteInfoViewController: UIViewController {
         performSegueWithIdentifier("Directions", sender: self)
     }
     
+    @IBAction func sources(sender: UIButton) {
+        performSegueWithIdentifier("Sources", sender: self)
+    }
+    
     @IBAction func map(sender: UIButton) {
         performSegueWithIdentifier("MapView", sender: self)
     }
@@ -73,6 +77,11 @@ class SiteInfoViewController: UIViewController {
             directionsViewController.siteInfo = siteInfo
             directionsViewController.siteAddress = siteAddress
             directionsViewController.siteName = siteName
+        } else if segue.identifier == "Sources" {
+            var sourcesViewController: SourcesViewController = segue.destinationViewController as! SourcesViewController
+            sourcesViewController.siteInfo = siteInfo
+            sourcesViewController.siteAddress = siteAddress
+            sourcesViewController.siteName = siteName
         }
     }
     

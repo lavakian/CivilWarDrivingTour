@@ -12,7 +12,7 @@ class DirectionsViewController: UIViewController {
 
     var siteName = ""
     var siteAddress = ""
-    var siteInfo = ["", "", "", "", ""]
+    var siteInfo = ["", "", "", "", "", "", ""]
     
     @IBOutlet var siteTitle: UILabel!
     @IBOutlet var address: UILabel!
