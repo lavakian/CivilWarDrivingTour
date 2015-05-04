@@ -11,6 +11,7 @@ import UIKit
 
 class SiteInfoViewController: UIViewController {
     
+    @IBOutlet var siteImage: UIImageView!
     @IBOutlet var siteTitle: UILabel!
     @IBOutlet var address: UILabel!
     @IBOutlet var funFacts: UITextView!
@@ -19,6 +20,7 @@ class SiteInfoViewController: UIViewController {
     var siteName = ""
     var siteInfo = ["", "", "", "", ""]
     var siteAddress = ""
+    var imageName = ""
     
     var toSend = ""
     
@@ -36,10 +38,18 @@ class SiteInfoViewController: UIViewController {
         self.siteDescription?.scrollRangeToVisible(NSMakeRange(0, 0))
         
         siteAddress = siteInfo[4]
+        
+        println(siteInfo[5])
+        
+        siteImage.image = UIImage(named: siteInfo[5])
     }
     
     @IBAction func website(sender: UIButton) {
             performSegueWithIdentifier("Web", sender: self)
+    }
+    
+    @IBAction func directions(sender: UIButton) {
+        performSegueWithIdentifier("Directions", sender: self)
     }
     
     @IBAction func map(sender: UIButton) {
@@ -58,6 +68,11 @@ class SiteInfoViewController: UIViewController {
         } else if segue.identifier == "MapView" {
             var mapViewController: SiteMapViewController = segue.destinationViewController as! SiteMapViewController
             mapViewController.siteName = siteName
+        } else if segue.identifier == "Directions" {
+            var directionsViewController: DirectionsViewController = segue.destinationViewController as! DirectionsViewController
+            directionsViewController.siteInfo = siteInfo
+            directionsViewController.siteAddress = siteAddress
+            directionsViewController.siteName = siteName
         }
     }
     
