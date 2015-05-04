@@ -31,6 +31,39 @@ class SiteMapViewController: UIViewController {
             latitude: 37.128554,
             longitude: -80.410726
         )
+        let location4 = CLLocationCoordinate2D(
+            latitude: 37.326034,
+            longitude: -80.735324
+        )
+        let location5 = CLLocationCoordinate2D(
+            latitude: 37.226124,
+            longitude: -80.426778
+        )
+        let location6 = CLLocationCoordinate2D(
+            latitude: 37.199882,
+            longitude: -80.564695
+        )
+        let location7 = CLLocationCoordinate2D(
+            latitude: 37.217744,
+            longitude: -80.432033
+        )
+        let location8 = CLLocationCoordinate2D(
+            latitude: 37.132590,
+            longitude: -80.561152
+        )
+        let location9 = CLLocationCoordinate2D(
+            latitude: 37.131270,
+            longitude: -80.406373
+        )
+        let location10 = CLLocationCoordinate2D(
+            latitude: 37.131270,
+            longitude: -80.406373
+        )
+        let location11 = CLLocationCoordinate2D(
+            latitude: 37.129758,
+            longitude: -80.408812
+        )
+        
         // 2
         
         
@@ -53,11 +86,61 @@ class SiteMapViewController: UIViewController {
         annotation3.title = "Christiansburg Presbyterian Church"
         annotation3.subtitle = "Christiansburg"
         AN.append(annotation3)
+        
+        let annotation4 = MKPointAnnotation()
+        annotation4.coordinate = location4
+        annotation4.title = "Pearisburg"
+        annotation4.subtitle = "Virginia"
+        AN.append(annotation4)
+        
+        let annotation5 = MKPointAnnotation()
+        annotation5.coordinate = location5
+        annotation5.title = "Solitude"
+        annotation5.subtitle = "Blacksburg"
+        AN.append(annotation5)
+        
+        let annotation6 = MKPointAnnotation()
+        annotation6.coordinate = location6
+        annotation6.title = "Kentland Plantation"
+        annotation6.subtitle = "Blacksburg"
+        AN.append(annotation6)
+        
+        let annotation7 = MKPointAnnotation()
+        annotation7.coordinate = location7
+        annotation7.title = "Smithfield Plantation"
+        annotation7.subtitle = "Blacksburg"
+        AN.append(annotation7)
+        
+        let annotation8 = MKPointAnnotation()
+        annotation8.coordinate = location8
+        annotation8.title = "Battle of New River Bridge"
+        annotation8.subtitle = "Radford"
+        AN.append(annotation8)
+        
+        let annotation9 = MKPointAnnotation()
+        annotation9.coordinate = location9
+        annotation9.title = "Montague House"
+        annotation9.subtitle = "Christiansburg"
+        AN.append(annotation9)
+        
+        let annotation10 = MKPointAnnotation()
+        annotation10.coordinate = location10
+        annotation10.title = "Montgomery White Sulphur Springs"
+        annotation10.subtitle = "Christiansburg"
+        AN.append(annotation10)
+        
+        let annotation11 = MKPointAnnotation()
+        annotation11.coordinate = location11
+        annotation11.title = "Montgomery County Confederate Monument"
+        annotation11.subtitle = "Christiansburg"
+        AN.append(annotation11)
+
+        
         println(AN)
         mapView.addAnnotations(AN)
         
         
-        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let span = MKCoordinateSpanMake(0.5, 0.5)
         let region = MKCoordinateRegion(center: location2, span: span)
         mapView.setRegion(region, animated: true)
     }
